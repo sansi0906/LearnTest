@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="suiteName">
+    <test name="runall">
+    <classes>
+        <class name="com.sansi.testng.groups.GroupOnClass1"></class>
+        <class name="com.sansi.testng.groups.GroupOnClass2"></class>
+        <class name="com.sansi.testng.groups.GroupOnClass3"></class>
+    </classes>
+    </test>
+
+    <test name="onlyRun">
+        <groups>
+            <run>
+                <include name="stu"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.sansi.testng.groups.GroupOnClass1"></class>
+            <class name="com.sansi.testng.groups.GroupOnClass2"></class>
+            <class name="com.sansi.testng.groups.GroupOnClass3"></class>
+        </classes>
+    </test>
+</suite>
