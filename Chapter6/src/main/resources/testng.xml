@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<suite name="my suite">
+    <test name="测试报告输出">
+        <classes>
+            <class name="com.tester.extent.demo.TestMethodDemo">
+                <methods>
+                    <inculde name="testFirst"/>
+                    <inculde name="testTwo"/>
+                    <inculde name="testThree"/>
+                    <inculde name="logDemo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <!--        <listener class-name="com.vimalselvam.testng.listener.ExtentTestNgFormatter"></listener>-->
+        <listener class-name="com.tester.extent.demo.ExtentTestNGIReporterListener"></listener>
+    </listeners>
+</suite>

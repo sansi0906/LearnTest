@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="用户管理系统测试套件" duration-ms="13140" started-at="2024-07-31T07:35:06Z" finished-at="2024-07-31T07:35:19Z">
+    <groups>
+      <group name="loginTrue">
+        <method signature="LoginTest.loginTrue()[pri:0, instance:com.sansi.cases.LoginTest@48140564]" name="loginTrue" class="com.sansi.cases.LoginTest"/>
+      </group> <!-- loginTrue -->
+      <group name="loginFalse">
+        <method signature="LoginTest.loginFalse()[pri:0, instance:com.sansi.cases.LoginTest@48140564]" name="loginFalse" class="com.sansi.cases.LoginTest"/>
+      </group> <!-- loginFalse -->
+    </groups>
+    <test name="用户管理系统测试用例" duration-ms="13140" started-at="2024-07-31T07:35:06Z" finished-at="2024-07-31T07:35:19Z">
+      <class name="com.sansi.cases.GetUserListInfoTest">
+        <test-method status="PASS" signature="getUserListInfo()[pri:0, instance:com.sansi.cases.GetUserListInfoTest@43a25848]" name="getUserListInfo" duration-ms="2069" depends-on-groups="loginTrue" started-at="2024-07-31T15:35:17Z" description="获取性别为男的用户列表信息" finished-at="2024-07-31T15:35:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserListInfo -->
+      </class> <!-- com.sansi.cases.GetUserListInfoTest -->
+      <class name="com.sansi.cases.AddUserTest">
+        <test-method status="PASS" signature="addUser()[pri:0, instance:com.sansi.cases.AddUserTest@58ceff1]" name="addUser" duration-ms="3071" depends-on-groups="loginTrue" started-at="2024-07-31T15:35:08Z" description="添加一个用户" finished-at="2024-07-31T15:35:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addUser -->
+      </class> <!-- com.sansi.cases.AddUserTest -->
+      <class name="com.sansi.cases.UpdateUserInfoTest">
+        <test-method status="PASS" signature="updateUserInfo()[pri:0, instance:com.sansi.cases.UpdateUserInfoTest@2133c8f8]" name="updateUserInfo" duration-ms="2044" depends-on-groups="loginTrue" started-at="2024-07-31T15:35:13Z" description="根据 userId更新用户信息" finished-at="2024-07-31T15:35:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUserInfo -->
+        <test-method status="PASS" signature="deleteUser()[pri:0, instance:com.sansi.cases.UpdateUserInfoTest@2133c8f8]" name="deleteUser" duration-ms="2037" depends-on-groups="loginTrue" started-at="2024-07-31T15:35:15Z" description="逻辑删除一个用户" finished-at="2024-07-31T15:35:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUser -->
+      </class> <!-- com.sansi.cases.UpdateUserInfoTest -->
+      <class name="com.sansi.cases.LoginTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.sansi.cases.LoginTest@48140564]" name="beforeTest" is-config="true" duration-ms="28" started-at="2024-07-31T15:35:06Z" description="测试准备工作，获取 httpclient对象" finished-at="2024-07-31T15:35:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loginTrue()[pri:0, instance:com.sansi.cases.LoginTest@48140564]" name="loginTrue" duration-ms="1724" started-at="2024-07-31T15:35:06Z" description="case-用户登陆成功" finished-at="2024-07-31T15:35:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTrue -->
+        <test-method status="PASS" signature="loginFalse()[pri:0, instance:com.sansi.cases.LoginTest@48140564]" name="loginFalse" duration-ms="33" started-at="2024-07-31T15:35:08Z" description="case-用户登陆失败" finished-at="2024-07-31T15:35:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFalse -->
+      </class> <!-- com.sansi.cases.LoginTest -->
+      <class name="com.sansi.cases.GetUserInfoTest">
+        <test-method status="PASS" signature="getUserInfo()[pri:0, instance:com.sansi.cases.GetUserInfoTest@49e4cb85]" name="getUserInfo" duration-ms="2116" depends-on-groups="loginTrue" started-at="2024-07-31T15:35:11Z" description="获取userId为1的用户信息" finished-at="2024-07-31T15:35:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUserInfo -->
+      </class> <!-- com.sansi.cases.GetUserInfoTest -->
+    </test> <!-- 用户管理系统测试用例 -->
+  </suite> <!-- 用户管理系统测试套件 -->
+</testng-results>

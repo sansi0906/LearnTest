@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.sansi">
+    <!--登陆接口sql-->
+    <select id="login" parameterType="com.sansi.model.User" resultType="Integer">
+        select count(*) from loginUser where userName=#{userName} and password =#{password};
+    </select>
+    <!--    添加用户接口 sql-->
+    <insert id="addUser" parameterType="com.sansi.model.User" useGeneratedKeys="true" keyProperty="id">
+insert into loginUser (userName,password,sex,age,permission,is_delete)
+values(#{userName},#{password},#{sex},#{age},#{permission},#{is_delete})
+    </insert>
+    <!--    获取用户sql-->
+    <select id="getUserInfo" parameterType="com.sansi.model.User" resultType="com.sansi.model.User">
+        select * from loginUser
+        <trim prefix="where" prefixOverrides="and">
+            <if test="null !=id and ''!=id ">and id =#{id}</if>
+            <if test="null !=userName and ''!=userName ">and userName =#{userName}</if>
+            <if test="null !=password and ''!=password ">and password =#{password}</if>
+            <if test="null !=sex and ''!=sex ">and sex =#{sex}</if>
+            <if test="null !=age and ''!=age ">and age =#{age}</if>
+            <if test="null !=permission and ''!=permission ">and permission =#{permission}</if>
+            <if test="null !=is_delete and ''!=is_delete ">and is_delete =#{is_delete}</if>
+        </trim>
+    </select>
+    <!--    更新/删除用户信息-->
+    <update id="updateUserInfo" parameterType="com.sansi.model.User">
+        update loginUser
+        <trim prefix="set" suffixOverrides=",">
+            <if test="null !=userName and ''!=userName">userName=#{userName},</if>
+            <if test="null !=sex and ''!=sex">sex=#{sex},</if>
+            <if test="null !=age and ''!=age">age=#{age},</if>
+            <if test="null !=permission and ''!=permission">permission=#{permission},</if>
+            <if test="null !=is_delete and ''!=is_delete">is_delete=#{is_delete},</if>
+        </trim>
+        where id =#{id};
+    </update>
+</mapper>
