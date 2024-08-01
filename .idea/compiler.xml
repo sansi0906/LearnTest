@@ -17,14 +17,14 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Chapter" target="1.8" />
-      <module name="Chapter10" target="1.8" />
-      <module name="Chapter11" target="1.8" />
-      <module name="Chapter12" target="1.8" />
-      <module name="Chapter13" target="1.8" />
-      <module name="Chapter5" target="1.8" />
-      <module name="Chapter6" target="1.8" />
-      <module name="Chapter9" target="1.8" />
+      <module name="Chapter" target="17" />
+      <module name="Chapter10" target="17" />
+      <module name="Chapter11" target="17" />
+      <module name="Chapter12" target="17" />
+      <module name="Chapter13" target="17" />
+      <module name="Chapter5" target="17" />
+      <module name="Chapter6" target="17" />
+      <module name="Chapter9" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
