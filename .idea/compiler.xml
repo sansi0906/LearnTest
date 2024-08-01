@@ -29,13 +29,13 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="Chapter10" options="-parameters" />
-      <module name="Chapter11" options="-parameters" />
-      <module name="Chapter12" options="-parameters" />
-      <module name="Chapter13" options="-extdirs $PROJECT_DIR$/Chapter13./lib" />
-      <module name="Chapter5" options="-parameters" />
-      <module name="Chapter6" options="-parameters" />
-      <module name="Chapter9" options="-parameters" />
+      <module name="Chapter10" options="-parameters --add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
+      <module name="Chapter11" options="-parameters --add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
+      <module name="Chapter12" options="-parameters --add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
+      <module name="Chapter13" options="-extdirs $PROJECT_DIR$/Chapter13./lib --add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
+      <module name="Chapter5" options="-parameters --add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
+      <module name="Chapter6" options="-parameters --add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
+      <module name="Chapter9" options="-parameters --add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED" />
     </option>
   </component>
 </project>
